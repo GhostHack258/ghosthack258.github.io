@@ -2,7 +2,7 @@
 
 0\. cmd'nizi yönetici olarak açın, ardından şunu yazın: bcdedit /set hypervisorlaunchtype off
 
-1. Bu [Linkteki ](https://workupload.com/file/Z8mXa6DAf9F)hepsi birlikte birleştirilmiş olan rari klasöre çıkartın.
+1. Bu [Linkteki ](https://workupload.com/file/8zM7ePyqYfb)hepsi birlikte birleştirilmiş olan rari klasöre çıkartın.
 2. Rardaki checker dosyasini açip seriallerinizi bir not defterine kaydedin.
 3. Defender klasöründeki defender controli açin ve kapatin
 4. AIO Klasöründeki install\_bat yönetici olarak açin ve tamamlanmasini bekleyin.
