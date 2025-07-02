@@ -1,6 +1,6 @@
 # 💻 Spoofer Kılavuz
 
-## TÜM ADIMLAI <mark style="color:green;">%100 DOĞRU</mark> YAPTIĞINIZA EMİN OLUN&#x20;
+## TÜM ADIMLARI <mark style="color:green;">%100 DOĞRU</mark> YAPTIĞINIZA EMİN OLUN&#x20;
 
 \
 Tüm adımları takip ettiğinizden ve hiçbirini atlamadığınızdan emin olun. Bir adımdan emin değilseniz lütfen destek biletimizle iletişime geçin.
