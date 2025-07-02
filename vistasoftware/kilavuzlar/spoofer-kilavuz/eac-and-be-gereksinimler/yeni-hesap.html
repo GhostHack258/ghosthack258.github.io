@@ -1,0 +1,108 @@
+<script type="text/javascript">
+        var gk_isXlsx = false;
+        var gk_xlsxFileLookup = {};
+        var gk_fileData = {};
+        function filledCell(cell) {
+          return cell !== '' && cell != null;
+        }
+        function loadFileData(filename) {
+        if (gk_isXlsx && gk_xlsxFileLookup[filename]) {
+            try {
+                var workbook = XLSX.read(gk_fileData[filename], { type: 'base64' });
+                var firstSheetName = workbook.SheetNames[0];
+                var worksheet = workbook.Sheets[firstSheetName];
+
+                // Convert sheet to JSON to filter blank rows
+                var jsonData = XLSX.utils.sheet_to_json(worksheet, { header: 1, blankrows: false, defval: '' });
+                // Filter out blank rows (rows where all cells are empty, null, or undefined)
+                var filteredData = jsonData.filter(row => row.some(filledCell));
+
+                // Heuristic to find the header row by ignoring rows with fewer filled cells than the next row
+                var headerRowIndex = filteredData.findIndex((row, index) =>
+                  row.filter(filledCell).length >= filteredData[index + 1]?.filter(filledCell).length
+                );
+                // Fallback
+                if (headerRowIndex === -1 || headerRowIndex > 25) {
+                  headerRowIndex = 0;
+                }
+
+                // Convert filtered JSON back to CSV
+                var csv = XLSX.utils.aoa_to_sheet(filteredData.slice(headerRowIndex)); // Create a new sheet from filtered array of arrays
+                csv = XLSX.utils.sheet_to_csv(csv, { header: 1 });
+                return csv;
+            } catch (e) {
+                console.error(e);
+                return "";
+            }
+        }
+        return gk_fileData[filename] || "";
+        }
+        </script><!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>GhostHack Yeni Hesap</title>
+</head>
+<body>
+    <h1>📗GhostHack Product</h1>
+    <p>Search...</p>
+    <p>CtrlK</p>
+
+    <h2>KILAVUZLAR</h2>
+    <ul>
+        <li>💻 GhostHack Kılavuz
+            <ul>
+                <li>Format İşlemleri</li>
+                <li>Format USB Hazırlama</li>
+                <li>Format</li>
+            </ul>
+        </li>
+        <li>Bios Güncelleme İşlemleri
+            <ul>
+                <li>⚒️Bios Ayarları</li>
+            </ul>
+        </li>
+        <li>Bilgisayar Ayarlamalar & Gereksinimler
+            <ul>
+                <li>📂Gereksınmler</li>
+            </ul>
+        </li>
+        <li>🚀EAC & BE Gereksinimler
+            <ul>
+                <li>🚀MONİTOR SPOOF</li>
+                <li>🚀DISK AYARLAMA</li>
+                <li>🚀YENİ HESAP</li>
+                <li>🚀Vpn Kullanımı</li>
+                <li>💠GhostHack & Bypass</li>
+            </ul>
+        </li>
+        <li>BSOD FİX</li>
+    </ul>
+
+    <p>Powered by GitBook</p>
+
+    <h3>On this page</h3>
+    <ul>
+        <li>KILAVUZLAR</li>
+        <li>💻 GhostHack Kılavuz</li>
+        <li>🚀EAC & BE Gereksinimler</li>
+        <li>🚀YENİ HESAP</li>
+    </ul>
+
+    <h4>🚀YENİ HESAP</h4>
+    <p>BU SAYFA SADECE EAC ANTİ-CHEAT & BEİÇİN SPOOF YAPANLAR İÇİNDİR VALORANT İCİN GEÇEBİLİRSİNİZ. SADECE EAC RUST, FORTNİTE GİBİ OYUNLAR</p>
+    <ol>
+        <li>YENİ HESAPLARLA İLGİLİ BİLGİLERİMİZİ OKUYUN</li>
+        <li>MAKSİMUM BAŞARI ORANI İÇİN YENİ BİR HESAPTA OLUN</li>
+        <li>FORTNITE TURNUVALARI YENİ BİR HESAPTA %30 DAHA İYİ ÇALIŞIR (SATIN ALINMAMIŞTIR)</li>
+    </ol>
+    <h5>NEDEN YENİ BİR HESAPTA OLMALIYIM?</h5>
+    <p>Güvenliğinizi sağlamak ve sahte hesabınızı korumak için yeni bir hesap açmanız önerilir. Özellikle daha önce sorunlarla karşılaşmışsa (örneğin kicks), birincil (ana) hesabınızı kullanmak potansiyel riskler taşır.</p>
+    <p>Lütfen bu işlemi yapmaya devam etmeyi seçmeniz durumunda sorumluluk kabul edemeyeceğimizi unutmayın - İade hakları ve garantiler de sona erer. ⚠️</p>
+    <p>NOT: Atılmış veya yasaklanmış olsanız bile Epic Games hesabınıza giriş yaparak ARK veya GTA V, Fivem gibi oyunları ek bir risk almadan oynayabilir ve daha sonra geri dönebilirsiniz. (Eski/ana hesabınızda Fortnite oynamanızı önermiyoruz)</p>
+    <p>⚠️ RUST için , yasaklandığınız bir Steam hesabına tekrar giriş yapmanız önerilmez . Bunu yapmak, " yasaklamadan kaçınma " nedeniyle ek sunucu yasaklarına yol açabilir .</p>
+    <p>Previous: <a href="disk-ayarlama.html">DISK AYARLAMA</a></p>
+    <p>Next: <a href="vpn-kullanimi.html">Vpn Kullanımı</a></p>
+    <p>Last updated 2 months ago</p>
+</body>
+</html>
