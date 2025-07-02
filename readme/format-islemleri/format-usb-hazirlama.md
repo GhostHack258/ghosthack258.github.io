@@ -9,7 +9,7 @@ icon: arrow-up-left-from-circle
 3.  **Kurulum ortamını (USB Flash sürücü) oluştur'u** seçin\
 
 
-    <figure><img src="../.gitbook/assets/image (1).png" alt="" width="375"><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 Önerilen tüm seçenekleri kullanıp devam edin ve bitmesini bekleyin.
 
