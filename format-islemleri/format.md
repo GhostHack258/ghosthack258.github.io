@@ -12,21 +12,21 @@ icon: gear
 **Windows 10 Pro'yu** seçin **(** **!)**\
 
 
-<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 **"Ürün anahtarım yok"** seçeneğini seçin (Bu konuda endişelenmeyin)
 
 \
 
 
-<figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 **Özel'i seçin:** Yalnızca Windows'u yükleyin (gelişmiş)
 
 \
 
 
-<figure><img src=".gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 Çıkan disklerin hepsini tek tek yukardan aşaği seçip sileceksınız. En sonda az disk kalana kadar ve sil butonu aktıf olmayacak şekilde hepsinde olursa kuruluma devam edin ve kurulmasını bekleyin.
 
